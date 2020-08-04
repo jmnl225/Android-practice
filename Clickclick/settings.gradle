@@ -1,0 +1,2 @@
+rootProject.name='Clickclick'
+include ':app'

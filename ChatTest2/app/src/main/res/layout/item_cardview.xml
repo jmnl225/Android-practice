@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp"
+    android:elevation="16dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardview"
+    android:onClick="ClickCardview">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/cv_img"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:src="@drawable/piano2"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/cv_title"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/cv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is Title Space"
+
+            android:textSize="24sp"
+            android:textColor="#FF222222"
+            android:layout_marginLeft="6dp"
+            android:layout_margin="6dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/cv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner name"
+            android:layout_below="@+id/cv_title"
+
+            android:layout_toRightOf="@+id/cv_img"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/cv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is the message block however to test I am writing meaningless text here blablabla aadfjnksoafhdsjfhkldjshnfkldjsahnfjiwhfkldsnafla"
+            android:layout_below="@+id/cv_name"
+
+            android:layout_toRightOf="@+id/cv_img"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="4"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

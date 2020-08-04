@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jmnl2020.ex74bluetoothtest">
+    <!-- bluetooth 사용에 대한 퍼미션 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 마시멜로우 M버전 부터 주변장치 탐색할때 Location 퍼미션 필요  : 동적퍼미션 -->
+    <!-- **서버는 필요가 없음. - client가 접속을 위해 주변장치를 찾을 때 필요 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".BTListActivity"></activity>
+        <!-- Oreo 버전부터 서버로서 동장하려면 http통신 사용을 허락해야함!!!!!!! -->
+        <activity android:name=".ClientActivity" />
+        <activity android:name=".ServerActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

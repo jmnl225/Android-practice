@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChattingActivity">
+
+<!--    테스트-->
+<!--    <include layout="@layout/my_msgbox"/>-->
+<!--    <include layout="@layout/other_msgbox"/>-->
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="#FFFFFFFF"
+        android:dividerHeight="0dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Input Message"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+
+            android:background="@drawable/bg_et_name"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:layout_marginLeft="6dp"
+            android:padding="10dp"
+
+            android:onClick="clickSend"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

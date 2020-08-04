@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="로그인 방식을 선택해주세요."
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:onClick="clickLogin"
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_loginId"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:hint="email"-->
+<!--        android:inputType="text"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_loginPassword"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:hint="password"-->
+<!--        android:inputType="text"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="로그인"-->
+<!--        android:padding="6dp"-->
+<!--        android:layout_margin="6dp"-->
+<!--        android:layout_gravity="right"-->
+<!--        android:onClick="clickLogin"/>-->
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+

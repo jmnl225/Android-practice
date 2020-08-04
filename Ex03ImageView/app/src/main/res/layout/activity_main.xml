@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    >
+
+    <!--  이미지를 보여주는 view  -->
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/flag_korea"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="A"/>
+
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="B"/>
+
+    <Button
+        android:id="@+id/btn03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="C"/>
+
+    <Button
+        android:id="@+id/btn04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="D"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "669599954308",
+    "firebase_url": "https://ex84firebasestoragejmnl.firebaseio.com",
+    "project_id": "ex84firebasestoragejmnl",
+    "storage_bucket": "ex84firebasestoragejmnl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669599954308:android:9297fc8f2d8649bdf4d9d1",
+        "android_client_info": {
+          "package_name": "com.jmnl2020.ex84firebasestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669599954308-s7v87m8dfgqj5e5htjjl3r88eppm22cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuMjkt_knJ54yitLVYIaQgFiolMawUoEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669599954308-s7v87m8dfgqj5e5htjjl3r88eppm22cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

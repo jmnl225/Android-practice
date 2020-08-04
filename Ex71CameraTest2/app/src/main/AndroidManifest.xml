@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jmnl2020.ex71cameratest2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <!--    내 앱에서 만든  Uri를 다른 앱에 공개하고자 할 때, 프로바이더 만들기    -->
+    <!--     android:authorities = 자바에서 사용할 식별자와 같은 역할  -->
+    <!--     ***[ 디바이스에 있는 모든 앱 중에서 같은 이름이 있으면 안 됨!! ]  따라서 패키지이름을 적음.
+(중복되지 않는 값 패키지 이름) + .provider     -->
+    <!--    android:name = Provider 클래스 명 지정    -->
+    <!--    android:grantUriPermissions = Uri제공에 대한 임시 퍼미션    -->
+    <!--    android:exported false = 이 앱 말고 다른 앱에서는 이 프로바이더를 사용할 수 없음    -->
+
+        <provider
+            android:authorities="com.jmnl2020.ex71cameratest2.provider"
+            android:name="androidx.core.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+
+    <!--     Provider가 공개할 경로 명단 xml 등록       -->
+<!--      metadata : data를 설명하는 data      -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths"/>
+
+        </provider>
+
+    </application>
+
+</manifest>

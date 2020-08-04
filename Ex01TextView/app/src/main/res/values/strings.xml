@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ex01TextView</string>
+    <string name="my_text">Good Afternoon world!</string>
+</resources>

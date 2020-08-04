@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+        <!--  스크롤 뷰는 안에 오직 한 개의 뷰만 놓여질 수 있음  -->
+        <!--  스크롤뷰 안에 있는1개의 뷰의 높이는 무조건 wrap_content가 됨  -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="#bfbb"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="#bbfb"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="#bffb"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+        <!--  안에 있는 뷰의 width가 무조건 wrap_content  -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#bfbb"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:background="#bbfb"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:background="#bffb"/>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <!--   가로세로 모두 스크롤하고싶다면 중첩으로 제작     -->
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/uni"/>
+
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스크롤을 마지막으로"
+        android:onClick="clickBtn"/>
+
+</LinearLayout>

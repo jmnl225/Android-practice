@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "319725847809",
+    "firebase_url": "https://ex85firebasechattingjm.firebaseio.com",
+    "project_id": "ex85firebasechattingjm",
+    "storage_bucket": "ex85firebasechattingjm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319725847809:android:20bb5eca3a68d20ff14700",
+        "android_client_info": {
+          "package_name": "com.jmnl2020.ex85firebasechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319725847809-879nh80uparj8dmp4pp03fetvcdunjre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBodieyjaDvC2xQxmnQNiefGdsZ2wDIV9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319725847809-879nh80uparj8dmp4pp03fetvcdunjre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

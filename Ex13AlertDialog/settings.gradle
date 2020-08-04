@@ -1,0 +1,2 @@
+rootProject.name='Ex13AlertDialog'
+include ':app'

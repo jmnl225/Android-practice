@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:columnCount="3"
+        android:orientation="vertical"
+        android:rowCount="3">
+
+        <!--   기본 width는 wrap_content     -->
+        <Button android:text="집" />
+
+        <Button android:text="에" />
+
+        <Button android:text="가" />
+
+        <Button android:text="고" />
+
+        <Button android:text="싶" />
+
+        <Button android:text="다" />
+        <!--   칸:셀 위치 지정 가능     -->
+        <Button
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="7" />
+        <!--        컬룸번호의 순서 상관 없음 -->
+        <Button android:text="8" />
+        <!-- 겹쳐지기 가능 -->
+        <Button android:text="10" />
+
+        <!--        셀 병합도 가능! (ColumnSpan): 공간은 차지하지만 뷰의 크기는 변경되지 않음!! 뷰의 사이즈도 늘리고 싶다면 layout_gravity사용-->
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:text="11" />
+
+        <Button />
+
+        <!--        줄 병합도 가능-->
+        <Button
+            android:layout_rowSpan="2"
+            android:text="12" />
+
+        <Button />
+        <Button/>
+
+<!--        뭔지 1도 모르겠음 왜 안되냐고 이건 ~~~ -->
+
+    </GridLayout>
+
+
+</RelativeLayout>

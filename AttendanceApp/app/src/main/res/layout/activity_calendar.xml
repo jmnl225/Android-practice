@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddffffff">
+
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorpalePrimary"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:paddingLeft="10dp"/>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_marginTop="10dp"
+        android:numColumns="7"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:menu="@menu/bottom"
+        app:labelVisibilityMode="auto"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccent"/>
+
+
+</LinearLayout>

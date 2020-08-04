@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottomnavmenu1_calender"
+        android:title="Calender"/>
+
+    <item android:id="@+id/bottomnavmenu2_sheetmusic"
+        android:title="Sheetmusic"/>
+
+    <item android:id="@+id/bottomnavmenu3_event"
+        android:title="Event"/>
+
+</menu>

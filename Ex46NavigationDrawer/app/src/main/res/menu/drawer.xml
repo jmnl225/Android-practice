@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_gallery"
+        android:title="Gallery"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+
+    <item android:id="@+id/menu_send"
+        android:title="Send"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+
+    <item android:id="@+id/menu_dm"
+        android:title="Dm"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+
+    <item android:title="sub">
+        <menu>
+            <item android:id="@+id/aaa"
+                android:title="aaa"/>
+            <item android:id="@+id/bb"
+                android:title="bb"/>
+
+        </menu>
+    </item>
+
+
+</menu>

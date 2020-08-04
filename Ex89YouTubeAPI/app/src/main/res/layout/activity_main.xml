@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="go to YouTubeData Activity"
+        android:onClick="clickBtn"
+        />
+
+<!--    <com.google.android.youtube.player.YouTubePlayerView-->
+<!--        android:id="@+id/youtubeView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <fragment
+        android:id="@+id/youtubeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+
+    <com.google.android.youtube.player.YouTubeThumbnailView
+        android:id="@+id/thumlView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

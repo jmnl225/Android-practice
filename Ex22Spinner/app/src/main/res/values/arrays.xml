@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="datas">
+        <item>봄</item>
+        <item>여름</item>
+        <item>가을</item>
+        <item>겨울</item>
+        <item>동지</item>
+        <item>설</item>
+    </string-array>
+</resources>

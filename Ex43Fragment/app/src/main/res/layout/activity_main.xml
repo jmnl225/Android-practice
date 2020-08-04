@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView Of MainActivity"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Text"
+        android:onClick="clickBtn"/>
+
+
+<!--  프레그먼트를 xml에 명시적으로 직접 추가하면 프레그먼드의 추가/삭제/재배치가 불가능  -->
+    <fragment
+        android:id="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.jmnl2020.ex43fragment.MyFragment"
+        tools:layout="@layout/fragment_my"/>
+
+
+</LinearLayout>

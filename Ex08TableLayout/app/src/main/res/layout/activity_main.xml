@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    테이블 레이아웃 : 안에서는 width와 height 지정이 없으면 자동 wrap_content 설정    -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!--    첫번째 줄(Row)     -->
+        <!--     TableRow의 width는 기본 match_parent     -->
+
+        <TableRow>
+            <Button android:text="1"/>
+            <Button android:text="2"/>
+            <Button android:text="3"/>
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="4"/>
+        </TableRow>
+
+
+        <TableRow>
+            <Button
+                android:text="5"/>
+        </TableRow>
+
+<!--    기본 뷰들의 사이즈는 wrap_ 하지만 균등사이즈 배치를 한다면?    -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+
+            <TableRow>
+                <Button/>
+                <Button android:layout_span="2"/>
+                <Button/>
+            </TableRow>
+
+        </TableLayout>
+
+
+<!--    layout column 수는 순서변경은 안 됨    -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:shrinkColumns="*">
+
+            <TableRow>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+            </TableRow>
+
+        </TableLayout>
+
+    </TableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "695162485439",
+    "firebase_url": "https://fireddatabase.firebaseio.com",
+    "project_id": "fireddatabase",
+    "storage_bucket": "fireddatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695162485439:android:7e04006083754fb240a40a",
+        "android_client_info": {
+          "package_name": "com.jmnl2020.ex83firebasedb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695162485439-v3ds5bhlet72ldoc04nmq7fnosquouf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHdnziIhrcTJYgAXWTyq-HUNBF85ll7Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695162485439-v3ds5bhlet72ldoc04nmq7fnosquouf1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

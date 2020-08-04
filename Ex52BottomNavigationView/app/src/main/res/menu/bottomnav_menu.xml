@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/munu1"
+        android:title="Save"
+        android:icon="@android:drawable/ic_menu_save"/>
+
+    <item android:id="@+id/munu2"
+        android:title="Gallery"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+
+    <item android:id="@+id/munu3"
+        android:title="Share"
+        android:icon="@android:drawable/ic_menu_share"/>
+
+    <item android:id="@+id/munu4"
+        android:title="Call"
+        android:icon="@android:drawable/ic_menu_call"/>
+
+</menu>

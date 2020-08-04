@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GoodMoring 이렇게 문자를 보내~"
+        android:textAllCaps="false"
+        android:onClick="clickBtn"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:padding="8dp"
+        android:gravity="center"/>
+
+
+</LinearLayout>

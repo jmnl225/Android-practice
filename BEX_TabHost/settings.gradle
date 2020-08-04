@@ -1,0 +1,2 @@
+rootProject.name='BEX_TabHost'
+include ':app'

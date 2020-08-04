@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "530215726946",
+    "firebase_url": "https://ex86fcmpuch2020jm.firebaseio.com",
+    "project_id": "ex86fcmpuch2020jm",
+    "storage_bucket": "ex86fcmpuch2020jm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530215726946:android:3b6ea95c2b658d29a8863b",
+        "android_client_info": {
+          "package_name": "com.jmnl2020.ex86firebasecloudmessagepush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530215726946-t1bapn0uedr604p6uevp5lm1vp0cb5ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1zC6wVcvaVigNRmS5cVLM7csvzirauAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530215726946-t1bapn0uedr604p6uevp5lm1vp0cb5ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

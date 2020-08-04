@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="input name"
+        android:inputType="text"
+        android:background="@drawable/bg_edit"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input title"
+        android:background="@drawable/bg_edit"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="input message"
+        android:background="@drawable/bg_edit"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+
+        android:gravity="top"/>
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input price"
+        android:background="@drawable/bg_edit"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_gravity="right"
+        android:onClick="clickSelectImage"
+        />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_insert_photo_40dp"
+        android:padding="4dp"
+        android:background="@drawable/bg_edit"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Complete"
+        android:onClick="clickComplete"/>
+
+</LinearLayout>

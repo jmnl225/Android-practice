@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input text"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Second Activity"
+        android:textAllCaps="false"
+        android:onClick="clickBtn"/>
+
+
+</LinearLayout>

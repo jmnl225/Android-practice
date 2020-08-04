@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+<!--  구글 지도를 보여주는 Fragment  -->
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+<!--  구글 맵에 관한 정보가 적혀있는 java파일을 project structure 에서 받아두었기 때문에 name을 그 class 와 같도록 복붙  -->
+
+</RelativeLayout>

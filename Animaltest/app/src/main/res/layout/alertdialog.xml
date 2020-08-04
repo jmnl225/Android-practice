@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#555"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="제       목 : "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="right"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:hint="블라블라블라"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text=" 골라골라: "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:paddingTop="6dp"
+            android:gravity="right"
+
+            />
+
+        <RadioGroup
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="빨간맛"
+                android:textColor="#fff"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="노을맛"
+                android:textColor="#fff"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="맛"
+                android:textColor="#fff"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주홍맛"
+                android:textColor="#fff"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주홍맛"
+                android:textColor="#fff"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주홍맛"
+                android:textColor="#fff"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주홍맛"
+                android:textColor="#fff"/>
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

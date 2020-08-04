@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/wallpaper">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+<!--  listview의 항목이 하나도 없을 때 보여지는 뷰  -->
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="no data"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="기타 과일 입력"
+        android:inputType="text"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:onClick="clkickBtn"/>
+
+
+</LinearLayout>

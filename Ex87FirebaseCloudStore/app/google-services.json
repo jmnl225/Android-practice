@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "317760373473",
+    "firebase_url": "https://ex87firestorejm.firebaseio.com",
+    "project_id": "ex87firestorejm",
+    "storage_bucket": "ex87firestorejm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317760373473:android:7b2cec292f254f7237eda0",
+        "android_client_info": {
+          "package_name": "com.jmnl2020.ex87firebasecloudstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317760373473-9124n6arretb1blemkg3gnu4erucr9tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJYGUwVGHVr6mbqhkxqZ_QswLJZIbqNp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317760373473-9124n6arretb1blemkg3gnu4erucr9tq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

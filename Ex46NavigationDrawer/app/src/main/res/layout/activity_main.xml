@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layout_drawer">
+
+
+
+<!--  1. Contents뷰  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+
+    </RelativeLayout>
+
+<!--  2. side에 숨어있는 Drawer뷰  -->
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#eeffffff"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer"
+        app:headerLayout="@layout/drawer_header"
+        />
+
+    <!--  구분선 같은 걸 주고싶다면 submenu 생성  -->
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

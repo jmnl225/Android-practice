@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ex12Toast</string>
+    <!--  문자열을 xml에서 생성   -->
+    <string name="msg">안녕</string>
+</resources>

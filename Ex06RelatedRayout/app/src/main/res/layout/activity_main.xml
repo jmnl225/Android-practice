@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--  기본배치: 좌상단 -->
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a"/>
+
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="b"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/btn03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="c"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/btn04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="d"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/btn05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="f"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <!--  특정 뷰를 기준으로 배치 가능  -->
+
+    <Button
+        android:id="@+id/btn08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="h"
+        android:layout_below="@id/btn01"/>
+
+    <Button
+        android:id="@+id/btn09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i"
+        android:layout_toRightOf="@id/btn02"
+        android:layout_alignParentBottom="true"/>
+
+
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello world"
+        android:layout_above="@id/btn05"
+        android:layout_alignLeft="@id/btn05"
+        />
+
+    <Button
+        android:id="@+id/btn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textSize="30sp"
+        android:layout_toLeftOf="@id/btn05"
+        android:layout_alignBottom="@id/btn05"/>
+
+
+    <!--  뷰가 겹칠때 나중에 만든 것이 위에 존재함  -->
+    <!--  하지만 버튼이 최우선시 되기에 다른 뷰가 버튼 다음에 만들어져도 아래에 배치됨  -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#bbb"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nice" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
