@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:elevation="6dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="여기는 제목입니다. 그리고 브ㅜ라ㅣ우나;룽나루ㅏㅇ닢ㄹㅇㅁ"
+            android:textStyle="bold"
+
+            android:gravity="center"
+            android:textSize="20sp"
+            android:maxLines="2"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="6dp"
+
+            android:layout_below="@+id/tv_title"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/newyork2"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="이 편지는 영국에서 시작되었으며 편지를 받고 무시하는 사람은 블라블라 따라서 당신은 이 편지를 10명에게 보내야한다. 만약 그렇지 않을 경우에는 어쩌구 저쩌구 하지만 보낼 경우에는 행운이 찾아올 것이며 블라블라 10줄 을 언제 다 쓰냐 이래서...편지는 영국에서 시작되었으며 편지를 받고 무시하는 사람은 블라블라 따라서 당신은 이 편지를 10명에게 보내야한다. 만약 그렇지 않을 경우에는 어쩌구 저쩌구 하지만 보낼 경우에"
+            android:layout_toRightOf="@+id/img"
+            android:layout_below="@+id/tv_title"
+            android:padding="6dp"
+
+            android:maxLines="4"
+            />
+
+        <TextView
+            android:id="@+id/writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="6dp"
+            android:text="작성자 누구누구"
+            android:layout_toRightOf="@+id/img"
+            android:layout_below="@+id/desc"
+            android:layout_marginLeft="6dp"
+
+            />
+
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="4dp"
+            android:text="플레이어1, 플레이어2, 플레이어 3, 플레이어4"
+            android:layout_toRightOf="@+id/img"
+            android:layout_below="@+id/writer"
+            android:layout_marginLeft="6dp"
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

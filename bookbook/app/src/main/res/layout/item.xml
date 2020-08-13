@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:elevation="6dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="여기는 제목입니다. 제목을 최대 두 줄 까지 쓸 수 있도록 설정 "
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:paddingTop="8dp"
+        android:textSize="20sp"
+        android:maxLines="2"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+
+            android:layout_marginTop="52dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+
+                android:layout_below="@+id/tv_title"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newyork2"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                >
+
+                <TextView
+                    android:id="@+id/writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="6dp"
+                    android:text="작성자 누구누구"
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_below="@+id/desc"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="16sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="4dp"
+                    android:text="출판사 어디어디"
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_below="@+id/writer"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="12dp"
+                    android:text="12,200 원"
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_below="@+id/writer"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="이 편지는 영국에서 시작되었으며 편지를 받고 무시하는 사람은 블라블라 따라서 당신은 이 편지를 10명에게 보내야한다. 만약 그렇지 않을 경우에는 어쩌구 저쩌구 하지만 보낼 경우에는 행운이 찾아올 것이며 블라블라 10줄 을 언제 다 쓰냐 이래서...편지는 영국에서 시작되었으며 편지를 받고 무시하는 사람은 블라블라 따라서 당신은 이 편지를 10명에게 보내야한다. 만약 그렇지 않을 경우에는 어쩌구 저쩌구 하지만 보낼 경우에"
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_below="@+id/tv_title"
+                    android:padding="8dp"
+                    android:layout_marginTop="6dp"
+
+                    android:ellipsize="end"
+                    android:maxLines="7"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
