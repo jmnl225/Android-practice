@@ -41,14 +41,21 @@ public class MyAdapter extends PagerAdapter {
         //page.xml 문서ㅡㄹㄹ 읽어와서 View 객체로 만들기
         View page= inflater.inflate(R.layout.page, null);
 
-        //이 page안에 있는 ImageViewㅇ[ 햔제반쩨 ㅇ;ㅁ;ㅈ;ㄹ,ㄹ 지정
+        //이 page안에 있는 ImageView에 현재번째( position) 이미지를 설정
         ImageView iv= page.findViewById(R.id.iv);
         iv.setImageResource( items.get(position));
+
+        switch (position){
+            case 0:
+                break;
+            case 1:
+                break;
+        }
 
         //만들어진 page를 viewpager(첫번째 파라미터:container)에 추가하기)
         container.addView(page);
 
-        return page;
+        return page; //만들어진 페이지 뷰 객체 리턴 : 검증을 위해..
     }
 
 //    //1. xml문서를 읽어와ㅓ View객체로 ㅏ\매
@@ -82,6 +89,7 @@ public class MyAdapter extends PagerAdapter {
 
 
 
+    //instateItem()메소드에서 만들어서 리턴한 page가 이 메소드의 2번째 파라미터로 전달됨
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
 
