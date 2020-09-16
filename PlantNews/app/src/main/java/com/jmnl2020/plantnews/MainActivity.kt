@@ -1,5 +1,6 @@
 package com.jmnl2020.plantnews
 
+import android.content.res.XmlResourceParser
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -73,17 +74,17 @@ class MainActivity : AppCompatActivity() {
 
                 var eventType:Int = xpp.eventType
 
-                while (eventType != XmlPullParser.END_DOCUMENT ){
+                while (eventType != XmlResourceParser.END_DOCUMENT){
 
                     when (eventType){
-                        XmlPullParser.START_DOCUMENT -> runOnUiThread(object :Runnable{
+                        XmlResourceParser.START_DOCUMENT -> runOnUiThread(object :Runnable{
                             override fun run() {
                                 Toast.makeText(this@MainActivity,"분석시작",Toast.LENGTH_SHORT).show()
                                 Log.i("check test","파싱시작")
                             }
                         })
 
-                        XmlPullParser.START_TAG -> {
+                        XmlResourceParser.START_TAG -> {
                             var tagName: String = xpp.name
 
                             if(tagName == "downUrl"){
@@ -101,14 +102,16 @@ class MainActivity : AppCompatActivity() {
                             }
                         }//startTag
 
-                        XmlPullParser.TEXT -> {}
-                        XmlPullParser.END_TAG -> {
-                            Log.i("check test","End Tag")
+                        XmlResourceParser.TEXT -> {}
+                        XmlResourceParser.END_TAG -> {
+                            Log.i("check test"," ============= 파싱 끝 ==============")
                             var tagName2 = xpp.name
                             if (tagName2 == "item" ){
+                                Log.i("check test", "태그네임2")
 
                                 runOnUiThread(object:Runnable{
                                     override fun run() {
+                                        Log.i("check test","run on ui thread -> notify 어댑터")
                                         items.add(element = ItemVO(getTitle, getName, getDate, getUrl))
                                         mAdapter.notifyDataSetChanged()
                                     }
