@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    <!--   부트스트랩의 css만 사용   -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--    스크립트 작성    -->
+        <script>
+            //Native Android 에서 호출할 함수 - 파라미터로 값 전달받음
+            function setReceivedMessage(msg){
+                document.getElementById('msg').innerHTML= msg;
+            }
+
+            //Native Java로 메세지를 보내는 작업함수
+            function sendMessage(){
+                //input요소에 써있는 보내야할 메세지 얻어오기
+                var msg = document.getElementById('in1').value;
+
+                //안드로이드와 연결
+                //Android에서 연결자로 만든 객체의 별명("Droid")를 사용
+                window.Droid.setTextView(msg);
+
+                //Native Java에서 name을 만든경우, window (js 최상위객체) 안에서 java 안의 클래스를
+                //바라보고있는 객체가 자동생성됨.
+
+            }
+
+            //////////////////// js 에서 java 클래스와 연결해서 갤러리 열기 ///////////////////////
+            function openGallery(){
+                Droid.openGallery();
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        <div class="container mt-3">
+            <h5>Native Java로 보낼 메세지</h5>
+            <input class="form-control mt-3" type="text" id="in1" placeholder="input message">
+            <button onclick="sendMessage()" class="btn btn-primary btn-block mt-3">send message to Native Java</button>
+
+            <h5 class="mt-5">Native Android로 부터 받은 메세지</h5>
+            <h6 id="msg" class="mt-3">WAIT.....</h6>
+
+            <!--      java에서 갤러리앱을 불러올 버튼      -->
+            <button onclick="openGallery()" class="btn btn-success btn-block mt-5">open Gallery</button>
+
+        </div>
+    </body>
+</html>
